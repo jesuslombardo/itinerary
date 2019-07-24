@@ -1,0 +1,3 @@
+# itinerary
+
+npm install
