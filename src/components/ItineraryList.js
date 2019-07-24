@@ -36,9 +36,9 @@ class ItineraryList extends React.Component {
                 <th>{i}</th>
                 <th>{itinerary.name}</th>
                 <th>{itinerary.adress.geocoded_address.formatted_address}</th>
+                <th className="edit"><button onClick={() => this.editItinerary(i, itinerary)}>✏️</button></th>
+                <th className="edit"><button onClick={() => this.deleteItinerary(i)}>🗑️</button></th>
                 <th><input type="checkbox" onClick={() => this.props.completeItenerary(i)}></input></th>
-                <th><button onClick={() => this.editItinerary(i, itinerary)}>Edit</button></th>
-                <th><button onClick={() => this.deleteItinerary(i)}>Delete</button></th>
             </tr>
         );
     }
@@ -54,9 +54,9 @@ class ItineraryList extends React.Component {
                                 <th>#</th>
                                 <th>Stop Name</th>
                                 <th>Adress</th>
-                                <th>Complete</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
+                                <th>Complete</th>
                             </tr>
                         </thead>
                         <tbody>

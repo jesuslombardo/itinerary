@@ -45,18 +45,18 @@ class StopAdd extends React.Component {
                         <input 
                             id="name"
                             type="text" 
-                            placeholder="stop name"
+                            placeholder="DownTown Austin"
                             value={this.state.stopName}
                             onChange = {this.changeName} 
                             required
                         />
                     </div>
                     <div className="formGroup">
-                        <label htmlFor="adress">Stop Adress:</label>
+                        <label htmlFor="adress">Adress:</label>
                         <input 
                             id="adress"
                             type="text" 
-                            placeholder="stop adress" 
+                            placeholder="209 West 9th St. Austin, Texas 78701" 
                             value={this.state.term}
                             onChange = {this.changeAdress} 
                             required

@@ -7,7 +7,11 @@
         <title>Itinerary List</title>
         <style>
             @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-            
+            *{
+              margin:0;
+              padding:0;
+              box-sizing: border-box;
+            }
             body{
               font-family: 'Open Sans', sans-serif;
               text-align: center;
@@ -53,30 +57,21 @@
   
             .addStop{
               width:25%;
-              margin:0 auto;
+              margin:20px auto;
               text-align: center;
               border:1px solid grey;
               padding:10px
             }
   
             .addStop h2{
-              margin-top:0;
+              margin:0 auto 20px auto;
             }
-  
-            label{
-              margin-right: 20px;
-            }
-            
+          
             .formGroup{
               width:100%;
               text-align:left;
             }
-  
-            .formGroup input{
-              float:right;
-              width:50%;
-            }
-  
+    
             .submitBtn{
               margin-top:10px;
               width:100%;
@@ -92,6 +87,19 @@
               position: absolute;
               right: 0;
               top: 0;
+            }
+
+            .formGroup label{
+              width: 40%;
+              display: inline-block;
+            }
+
+            .formGroup input{
+              width: 60%;
+            }
+
+            .edit{
+              text-align:center;
             }
             </style>
     </head>
