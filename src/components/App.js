@@ -1,12 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+import StopAdd from './StopAdd';
+import ItineraryList from './ItineraryList';
 
-const Title = styled.h1`
-    color: black;
-    font-size: 2.5rem;
-    font-weight: 700;
-`;
-
-const App = () => <Title>Itinerary List</Title>;
+const App = () => {
+    return (
+        <div>
+            <StopAdd />
+            <ItineraryList />
+        </div>
+    );
+};
 
 export default App;

@@ -5,9 +5,100 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Itinerary List</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+            
+            body{
+              font-family: 'Open Sans', sans-serif;
+              text-align: center;
+            }
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+              margin-top:20px;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            thead{
+              background-color:#87cefa;
+            }
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+  
+            .modal{
+              background-color: #87cefaf2;
+              border: 2px solid lightskyblue;
+              border-radius: 5px;
+              position: absolute;
+              top: 5%;
+              left: 12.5vw;
+              width: 75vw;
+              height: 70vh;
+            }
+  
+            .modal .addStop{
+              width:45%;
+            }
+            
+            tr.completed{
+              background-color:#ccffc1;
+            }
+  
+            .addStop{
+              width:25%;
+              margin:0 auto;
+              text-align: center;
+              border:1px solid grey;
+              padding:10px
+            }
+  
+            .addStop h2{
+              margin-top:0;
+            }
+  
+            label{
+              margin-right: 20px;
+            }
+            
+            .formGroup{
+              width:100%;
+              text-align:left;
+            }
+  
+            .formGroup input{
+              float:right;
+              width:50%;
+            }
+  
+            .submitBtn{
+              margin-top:10px;
+              width:100%;
+              font-size:14px;
+            }
+  
+            .errors{
+              color:red;
+            }
+  
+            .modal button{
+              font-size: 30px;
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+            </style>
     </head>
 
     <body>
         <div id="root"></div>
+
+        
     </body>
 </html>
